@@ -1,0 +1,32 @@
+import { from } from "rxjs";
+import { distinctUntilKeyChanged } from 'rxjs/operators';
+
+interface Person {
+    name: string
+}
+
+const people: Person[] = [
+    {
+        name: 'Megaman'
+    },
+    {
+        name: 'X'
+    },
+    {
+        name: 'Zero'
+    },
+    {
+        name: 'Megaman'
+    },
+    {
+        name: 'Zero'
+    },
+    {
+        name: 'Zero'
+    },
+];
+
+from(people).pipe(
+    distinctUntilKeyChanged('name')
+)
+.subscribe(console.log)
