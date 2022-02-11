@@ -1,5 +1,8 @@
 # Proyecto inicial - Curso de RXJS
 
+## To install RxJs [https://rxjs.dev/guide/installation]
+npm install rxjs
+
 * Lo primero que debemos de hacer después de descargar el código es ejecutar el comando:
 
 ```
